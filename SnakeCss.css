@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background:url(SnakeImage.jpg);
+    min-height: 100vh;
+    min-width: 100wh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+#board{
+    width: 90vmin;
+    height: 92vmin;
+    background: linear-gradient(to left,rgb(112, 219, 104), rgb(0, 255, 238));
+    border: 5px groove rgb(78, 68, 68);
+    /* border-style: groove; */
+    transform: translateX(170px);
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head{
+    background: linear-gradient(to bottom,rgb(120, 32, 32) , rgb(246, 207, 30));
+    /* background-image: url(snake.png); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: .25vmin solid white;
+    border-radius: 10px;
+    transform: scale(1.05);
+    /* transform: rotate(180deg); */
+    transform-origin: center;
+}
+.food{
+    background: linear-gradient(rgb(207, 120, 234), rgb(57, 243, 0));
+    /* background: linear-gradient(rgb(234, 120, 120), red); */
+    /* background: url("grape.png"); */
+    /* border: .5vmin solid rgb(255, 0, 0); */
+    border-radius: 13px;
+    background-image: url('grape.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.snake{
+    background-color: rgb(251, 255, 0);
+    border: .25vmin solid white;
+    border-radius: 20px;
+    transform: scale(0.9);
+}
+
+#scoreBox{
+    position: fixed;
+    display: flex;
+    top: 49px;
+    right:200px;
+    font-size: 40px;
+    border: 3px solid rgb(252, 233, 233);
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 50px;
+    font-family: 'Lilita One', "cursive";
+    color: rgba(188, 18, 18, 0.861);
+}
+#highScoreBox{
+    position: absolute;
+    display: flex;
+    top: 149px;
+    right:150px;
+    font-size: 40px;
+    border: 3px solid rgb(239, 219, 219);
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 50px;
+    font-family: 'Lilita One', "cursive";
+    color: rgba(188, 18, 18, 0.861);
+}
