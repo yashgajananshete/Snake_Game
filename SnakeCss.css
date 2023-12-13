@@ -3,6 +3,7 @@
 *{
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
 
 .body{
@@ -14,6 +15,7 @@
     display: flex;
     /* justify-content: center; */
     align-items: center;
+    
 }
 #board{
     width: 90vmin;
@@ -83,12 +85,28 @@
     font-family: 'Lilita One', "cursive";
     color: rgba(188, 18, 18, 0.861);
 }
-
+h1{
+    display: none;
+}
 
 @media screen and (max-width: 1200px) {
-    
+    h1{
+        font-size: 20px;
+        z-index: 100;
+        display: flex;
+        border: 2px solid rgb(230, 207, 207);
+        padding: 10px;
+        color: rgb(247, 255, 10);
+    }
     .body{
-        display: none;
+        /* display: none; */
+        /* visibility: hidden */
+        /* background-color: brown; */
+        background:url(SnakeImage.jpg);
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
     }
     #board{
         display: none;
