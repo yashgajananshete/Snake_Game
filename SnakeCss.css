@@ -95,6 +95,7 @@ h1{
         z-index: 100;
         display: flex;
         border: 2px solid rgb(230, 207, 207);
+        margin-top: -250px;
         padding: 10px;
         color: rgb(247, 255, 10);
     }
