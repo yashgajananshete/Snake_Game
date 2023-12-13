@@ -83,3 +83,19 @@
     font-family: 'Lilita One', "cursive";
     color: rgba(188, 18, 18, 0.861);
 }
+
+
+@media screen and (max-width: 640px) {
+    .body{
+        display: none;
+    }
+    #board{
+        display: none;
+    }
+    #scoreBox{
+        display: none;
+    }
+    #highScoreBox{
+        display:none;
+    }
+}
