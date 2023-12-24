@@ -7,7 +7,7 @@
 }
 
 .body{
-    background:url(SnakeImage.jpg);
+    background:url(/Images/SnakeImage6.jpg);
     min-height: 100vh;
     min-width: 100wh;
     background-size: 100vw 100vh;
@@ -15,14 +15,23 @@
     display: flex;
     /* justify-content: center; */
     align-items: center;
+    position: relative;
     
 }
 #board{
     width: 90vmin;
     height: 92vmin;
-    background: linear-gradient(to left,rgb(112, 219, 104), rgb(0, 255, 238));
-    border: 5px groove rgb(78, 68, 68);
+    /* background: linear-gradient(to left,rgb(112, 219, 104), rgb(0, 255, 238)); */
+    /* background-image: linear-gradient(120deg, #dbedb1 0%, #7ce28a 100%); */
+    /* background-image: linear-gradient(120deg, #c6ffdd, #edd8a7, #c49799); */
+    /* background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% ); */
+    /* background-image: linear-gradient( 150deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% ); */
+    /* background-image: linear-gradient(120deg, #ff9966, #ff5e62); */
+    /* background-image: linear-gradient(120deg, #b6fbff, #83a4d4); */
+    background-image: linear-gradient(120deg, #ffefba, #d2b4b4);
+    border: 8px groove rgb(96, 57, 17);
     /* border-style: groove; */
+    border-radius: 7px;
     transform: translateX(170px);
     display: grid;
     grid-template-rows: repeat(18, 1fr);
@@ -30,13 +39,14 @@
 }
 
 .head{
-    background: linear-gradient(to bottom,rgb(120, 32, 32) , rgb(246, 207, 30));
-    /* background-image: url(snake.png); */
+    /* background: linear-gradient(to bottom,rgb(120, 32, 32) , rgb(246, 207, 30)); */
+    /* background-image:url(/Images/SnakeHead.png); */
+    background-image: url(Images/SnakeBody4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border: .25vmin solid white;
-    border-radius: 10px;
+    border: 1px solid rgb(102, 19, 19);
+    border-radius: 30px;
     transform: scale(1.05);
     /* transform: rotate(180deg); */
     transform-origin: center;
@@ -46,44 +56,70 @@
     /* background: linear-gradient(rgb(234, 120, 120), red); */
     /* background: url("grape.png"); */
     /* border: .5vmin solid rgb(255, 0, 0); */
-    border-radius: 13px;
-    background-image: url('grape.png');
+    /* border-radius: 13px; */
+    /* background-image: url('grape.png'); */
+    background-image: url(Images/egg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .snake{
-    background-color: rgb(251, 255, 0);
-    border: .25vmin solid white;
-    border-radius: 20px;
-    transform: scale(0.9);
+    /* background-color: rgb(183, 84, 18); */
+    background-image: url(Images/SnakeBody4.jpg);
+    border: 1px solid rgb(66, 21, 21);
+    /* border-radius: 30px ; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+/* transform: scale(0.7); */
 }
 
 #scoreBox{
-    position: fixed;
+    position: absolute;
     display: flex;
     top: 49px;
-    right:200px;
+    right:50px;
     font-size: 40px;
     border: 3px solid rgb(252, 233, 233);
+    border-radius: 20px;
     padding: 5px;
     padding-left: 10px;
-    padding-right: 50px;
+    padding-right: 10px;
     font-family: 'Lilita One', "cursive";
-    color: rgba(188, 18, 18, 0.861);
+    color: rgba(47, 0, 113, 0.861);
+    background-color: rgba(255, 230, 100, 0.6);
+    height: 70px;
+    width: 400px;
+    top: 10vh; /* 5% from the top of the viewport */
+    left: 60vw;
+    align-items: center;
+    justify-content: center;
+    
+    
 }
 #highScoreBox{
     position: absolute;
     display: flex;
-    top: 149px;
-    right:150px;
+    top: 169px;
+    right:10px;
     font-size: 40px;
     border: 3px solid rgb(239, 219, 219);
+    border-radius: 20px;
     padding: 5px;
     padding-left: 10px;
-    padding-right: 50px;
+    padding-right: 10px;
     font-family: 'Lilita One', "cursive";
-    color: rgba(188, 18, 18, 0.861);
+    color: rgba(47, 0, 113, 0.861);
+    /* background-color: rgb(226, 150, 150); */
+    height: 70px;
+    width: 450px;
+    top: 25vh; /* 5% from the top of the viewport */
+    left: 60vw;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 230, 100, 0.6);
+
+    
 }
 h1{
     display: none;
