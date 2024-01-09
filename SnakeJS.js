@@ -241,10 +241,10 @@
   window.requestAnimationFrame(main);
 
   //e stands for event
-  if (p) {
-    let userInput = window.prompt("Enter Your Name: ");
-    console.log(userInput);
-  }
+  // if (p) {
+  //   let userInput = window.prompt("Enter Your Name: ");
+  //   console.log(userInput);
+  // }
   window.addEventListener("keydown", (event) => {
     if (
       event.key === "ArrowUp" ||
